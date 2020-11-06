@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: helloStarlingx
-          image: {{ .Values.image.repository }}:{{ .Values.image.tag }}
+          image: wangyanglinux/myapp:v1
           ports:
            - containerPort: 80
              protocol: TCP
