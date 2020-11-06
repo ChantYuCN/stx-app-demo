@@ -3,7 +3,7 @@ namespace: stx-app
 version: 1.0-1
 chart:
 - name: chart1
-  path: file://home/chant/tools/app-gen-tool/stx-armada-manefest/stx-app
+  path: https://github.com/ChantYuCN/stx-app-demo.git 
   subpath: .
 chartGroup:
 - name: chartgroup1
