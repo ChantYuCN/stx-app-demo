@@ -9,6 +9,7 @@ spec:
       app: helloStarlingx
   template:
     metadata:
+      name: {{ print $envAll.Release.Name "-99cloud" }}
       labels:
         app: helloStarlingx
     spec:
