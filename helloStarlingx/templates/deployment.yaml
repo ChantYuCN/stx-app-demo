@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: helloStarlingx
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: helloStarlingx
+  template:
+    metadata:
+      labels:
+        app: helloStarlingx
+    spec:
+      containers:
+        - name: helloStarlingx
+          image: {{ .Values.image.repository }}:{{ .Values.image.tag }}
+          ports:
+           - containerPort: 80
+             protocol: TCP
