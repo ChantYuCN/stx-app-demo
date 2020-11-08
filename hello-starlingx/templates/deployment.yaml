@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: hello-Starlingx
+  name: hello-starlingx
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: hello-Starlingx
+      app: hello-starlingx
   template:
     metadata:
       labels:
-        app: hello-Starlingx
+        app: hello-starlingx
     spec:
       containers:
-        - name: hello-Starlingx
+        - name: hello-starlingx
           image: wangyanglinux/myapp:v1
           ports:
            - containerPort: 80
