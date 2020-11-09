@@ -1,7 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: hello-starlingx
+  name: v1-stx-app
+  label:
+    app: stx-app
+    release: {{ .Release.Name }}
 spec:
   type: NodePort
   ports:
@@ -9,4 +12,6 @@ spec:
     targetPort: 80
     protocol: TCP
   selector:
-    app: hello-starlingx
+    app: stx-app
+    release: {{ .Release.Name }}
+

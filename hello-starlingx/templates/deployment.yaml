@@ -1,18 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: hello-starlingx
+  name: v1-stx-app
   label:
-    release: v1-stx-app
+    app: stx-app
+    release: {{ .Release.Name }}
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: hello-starlingx
+      app: stx-app
+      release: {{ .Release.Name }}
   template:
     metadata:
       labels:
-        app: hello-starlingx
+        app: stx-app
+        release: {{ .Release.Name }}
     spec:
       containers:
         - name: hello-starlingx
