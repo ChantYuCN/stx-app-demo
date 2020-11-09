@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: hello-starlingx
   label:
-    release: {{ .Release.Name }}
+    release: v1-stx-app
 spec:
   replicas: 1
   selector:
