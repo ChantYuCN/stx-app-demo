@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
         - name: hello-starlingx
-          image: wangyanglinux/myapp:v1
+          image: docker.io/library/hello-world:linux
           ports:
            - containerPort: 80
              protocol: TCP
