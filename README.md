@@ -1,14 +1,14 @@
 # stx-app-demo
 
-A tutorial for building a Starlingx application.
+A tutorial for building a Starlingx application.  
 app-gen.py makes a helm-chart-tarball before archive an armada-manifest-tarball. 
-Follow the step listed below.
-1. Prepare k8s enviroment
-https://kubernetes.io/zh/docs/setup/production-environment/tools/kubeadm/install-kubeadm/
-
-2. Install helm/tiller
-https://helm.sh/docs/intro/install/
-
+Follow the step listed below.  
+1. Prepare k8s enviroment  
+https://kubernetes.io/zh/docs/setup/production-environment/tools/kubeadm/install-kubeadm/  
+  
+2. Install helm/tiller  
+https://helm.sh/docs/intro/install/  
+  
 3. Download starlignx/tools  
 git clone https://opendev.org/starlingx/tools.git  
 
